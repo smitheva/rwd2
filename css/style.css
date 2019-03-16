@@ -1,0 +1,240 @@
+
+nav a {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-family: 'Lato', sans-serif;
+	background: #3D441E;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 10px;
+	border: .25em solid #B6CFAE;
+	text-align: center;
+}
+
+a.current {
+	color: #3D441E;
+	background: #B6CFAE;
+	font-variant-caps: all-small-caps;
+	font-size: 150%;
+	border: .25em solid #3D441E;
+}
+a.skip {
+	position: relative;
+	left: -2000px;
+	z-index: -100px;
+}
+a.skip:focus {
+	border: 1px solid black;
+	position: relative;
+	left: 0;
+	z-index: 1px;
+}
+
+body header{
+	padding: 15px;
+}
+body main{
+	padding: 1em;
+	margin: 2%;
+	max-width: 90%;
+}
+body main p{
+	height: auto;
+}
+
+h1 {
+	font-family: 'Staatliches', cursive;
+	text-align: center;
+	font-size: 2.5em;
+	margin-top: -.25em;
+}
+
+.page h2 {
+	font-family: 'Staatliches', cursive;
+	text-align: center;
+	font-size: 1.5em;
+	padding: .5em .5em .25em .5em;
+	margin-top: -.25em;
+	margin-bottom: .25em;
+}
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: .5em;
+}
+footer {
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	font-size: 1.5em;
+	margin-bottom: 25px;
+	margin-top: -2em;
+}
+.address {
+	padding: .25em;
+}
+.phone {
+	padding: .25em;
+}
+img {
+	max-width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	display: flex;
+}
+footer img {
+	
+	padding: .5em;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery img {
+	width: 100%;
+	text-align: center;
+}
+
+.tree {
+	text-align: center;
+	font-size: 1.75em;
+	color: #3D441E;
+	padding: 1em;
+}
+
+.bottom img{
+	max-height: 300px;
+	width: auto;
+	text-align: center;
+	display: inline-block;
+}
+.middle img {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding-top: .5em;
+}
+
+
+
+/* ------------- First Breakpoint --------------- */
+
+
+
+@media screen and (min-width: 750px) {
+body {
+	background-image: url('../images/white-waves.png');
+	background-repeat: repeat;
+}
+nav ul{
+	display: flex;
+	justify-content: flex-start;
+}
+
+nav ul li{
+	display: inline-block;
+	width: 25%;
+	padding: 1em;
+	height: 4em;
+	text-align: center;
+}
+
+/* ----- Still working on setting flex items to all same height within nav ----
+
+.flex-item {
+	height: 5em;
+	font-family: 'Lato', sans-serif;
+	background: #3D441E;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 10px;
+	border: .25em solid #B6CFAE;
+	text-align: center;
+}*/
+h1 {
+	font-size: 4em;
+	margin-top: .75em;
+}
+p {
+	width: 90%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+.page h2 {
+	margin-bottom: .25em;
+}
+
+.last {
+	display: block;
+}
+.middle {
+	width: 90%;
+	height: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: .5em;
+	align-items: center;
+}
+.middle img {
+	width: 100%;
+	text-align: center;
+}
+
+footer.glacier {
+	display: block;
+	max-width: 90%;
+	height: auto;
+	padding: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+/*footer p{
+	max-height: 15em;
+	width: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+}*/
+
+}
+
+
+
+
+
+/* ------------- Second Breakpoint --------------- */
+
+
+@media screen and (min-width: 1000px) {
+p {
+	width: 70%;
+	padding-left: 15%;
+}
+
+
+footer img{
+	margin-top: -1em;
+	max-height: 15em;
+	width: auto;
+	padding-left: 15%;
+	padding-right: 5%;
+}
+img.cactus {
+	display: block;
+	margin-left: 23%;
+	margin-right: auto;
+}
+.bottom {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 60%;
+	margin: auto;
+}
+.grid-item {
+	place-self: center;
+}
+
+}
